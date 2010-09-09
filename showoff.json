@@ -1,1 +1,6 @@
-{ "name": "My Preso", "sections": [ {"section":"one"} ]}
+{
+	"name": "Hack Workshop Series - VCS",
+	"sections": [
+		{"section": "intro"}
+	]
+}
