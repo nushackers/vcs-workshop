@@ -47,3 +47,13 @@
 !SLIDE
 
 # Better! #
+
+!SLIDE bullets incremental
+
+# version control lets you: #
+
+* track what changed, where
+* track who changed what
+* safe to #fail
+* feature/topic-based development
+* sychronization/collaboration
