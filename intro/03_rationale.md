@@ -52,8 +52,7 @@
 
 # version control lets you: #
 
-* track what changed, where
-* track who changed what
+* track what changed, where, who
 * safe to #fail
 * feature/topic-based development
 * sychronization/collaboration
