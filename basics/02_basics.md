@@ -14,9 +14,17 @@
 !SLIDE bullets
 
 ## put this in:
-- on Unix, `~/.hgrc`
-- on Windows, `USERPROFILE%\.hgrc`
-- with TortoiseHg: Global Settings -> Commit -> Username
+- on Unix,
+
+  `~/.hgrc`
+
+- on Windows,
+
+  `USERPROFILE%\.hgrc`
+
+- with TortoiseHg,
+
+  Global Settings -> Commit -> Username
 
 !SLIDE bullets
 
