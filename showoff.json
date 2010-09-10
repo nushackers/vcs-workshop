@@ -1,6 +1,7 @@
 {
 	"name": "Hack Workshop Series - VCS",
 	"sections": [
-		{"section": "intro"}
+		{"section": "intro"},
+		{"section": "basics"}
 	]
 }
