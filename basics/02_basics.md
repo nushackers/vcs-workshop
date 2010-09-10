@@ -85,6 +85,27 @@
 
 !SLIDE
 
+# Check your repo
+
+	$ hg status
+	? index.html
+
+!SLIDE bullets
+
+# `hg status` shows you...
+- ...status of files in your local repo
+
+!SLIDE
+
+# Some common status codes:
+
+	? = not tracked
+	A = added
+	C = clean
+	M = modified
+
+!SLIDE
+
 # How do you tell `hg` to track your file?
 
 !SLIDE
@@ -104,14 +125,9 @@
 	$ hg commit -m "first step towards world domination"
 	$ hg status
 
-!SLIDE bullets
-
-# `hg status` shows you...
-- ...status of files in your local repo
-
 !SLIDE
 
-# if no output, then nothing has changed
+# if `hg status` is silent, then nothing has changed
 
 !SLIDE
 
