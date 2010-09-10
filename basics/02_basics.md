@@ -116,7 +116,7 @@
 
 !SLIDE
 
-## But `git add` is only a statement of intent
+# But `git add` is only a statement of intent
 
 !SLIDE small
 
