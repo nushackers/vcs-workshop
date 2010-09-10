@@ -1,6 +1,6 @@
 !SLIDE
 
-# why use version control? #
+# Why use version control? #
 
 !SLIDE
 
