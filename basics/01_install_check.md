@@ -6,17 +6,17 @@
 
 ![Mercurial](Mercurial_logo.png)
 
-!SLIDE
-
-# For Windows users: #
-
 !SLIDE center
 
 ![TortoiseHg](tortoise_hg_logo.png)
 
 !SLIDE
 
-## Pretty, graphical alternative ##
+## Provides a pretty, graphical front-end
+
+!SLIDE
+
+# (Optional) For Windows users:
 
 !SLIDE center
 
