@@ -28,7 +28,7 @@
 
 !SLIDE bullets
 
-# Repository #
+# Term: Repository #
 
 * "repo" in short
 
