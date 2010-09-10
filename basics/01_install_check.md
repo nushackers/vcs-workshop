@@ -29,3 +29,9 @@
 !SLIDE
 
 # Thou shalt install, now! #
+
+!SLIDE bullets incremental
+
+# Done? #
+
+- Let's begin!
