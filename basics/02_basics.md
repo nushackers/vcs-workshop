@@ -127,11 +127,11 @@
 
 !SLIDE
 
-# if `hg status` is silent, then nothing has changed
+# If `hg status` is silent, then nothing has changed
 
 !SLIDE
 
-# but for the paranoid:
+# But for the paranoid:
 
 	$ hg status --all
 	C index.html
