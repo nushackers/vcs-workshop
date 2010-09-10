@@ -46,3 +46,10 @@
 
 	$ hg clone http://john.com/project-repo
 	$ hg clone /path/to/local/repo
+
+!SLIDE bullets incremental
+
+# Term: Clones and Working Copies #
+* a feature of distributed VCS
+* you get a local copy of repository
+* full history
