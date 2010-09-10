@@ -2,11 +2,9 @@
 
 # Why use version control? #
 
-!SLIDE
-
-# Do you do this? #
-
 !SLIDE bullets incremental
+
+# Do you do this?
 
 * assignment_2010_05_07.c
 * assignment_2010_05_09.c
