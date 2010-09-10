@@ -4,7 +4,7 @@
 
 - Grab `index.html` from here:
 
-  [http://github.com/rctay/nus-hack-vcs-slides/zipball/01-base](http://github.com/rctay/nus-hack-vcs-slides/zipball/01-base)
+  [http://github.com/rctay/nus-hack-vcs-slides/tree/01-base/index.html](http://github.com/rctay/nus-hack-vcs-slides/tree/01-base/index.html)
 
 !SLIDE commandline
 
