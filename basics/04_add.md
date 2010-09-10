@@ -60,7 +60,7 @@
 
 !SLIDE
 
-# But `git add` is only a statement of intent
+# But `hg add` is only a statement of intent
 
 !SLIDE small
 
