@@ -85,8 +85,37 @@
 
 !SLIDE
 
-# Tell `hg` to track your file
+# How do you tell `hg` to track your file?
+
+!SLIDE
 
 	$ hg add index.html
+	$ hg status
+	A index.html
 
+!SLIDE
 
+## But `git add` is only a statement of intent
+
+!SLIDE small
+
+# Really do it
+
+	$ hg commit -m "first step towards world domination"
+	$ hg status
+
+!SLIDE bullets
+
+# `hg status` shows you...
+- ...status of files in your local repo
+
+!SLIDE
+
+# if no output, then nothing has changed
+
+!SLIDE
+
+# but for the paranoid:
+
+	$ hg status --all
+	C index.html
