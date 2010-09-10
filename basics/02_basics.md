@@ -13,7 +13,7 @@
 
 !SLIDE bullets
 
-## put this in:
+# put this in:
 - on Unix,
 
   `~/.hgrc`
