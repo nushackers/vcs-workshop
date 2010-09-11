@@ -74,6 +74,21 @@
 ## <br />
 
 	$ hg commit -m "first step towards world domination"
+
+!SLIDE
+
+# `hg commit`...
+
+## saves the current state
+
+## creates a checkpoint in history
+
+!SLIDE
+
+# Let's check our status
+
+!SLIDE
+
 	$ hg status
 
 !SLIDE
