@@ -9,6 +9,8 @@
 
 * tell hg who you are
 
+* used to "sign" your commits
+
 !SLIDE bullets smaller left
 
 # put
