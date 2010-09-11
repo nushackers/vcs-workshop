@@ -57,8 +57,7 @@ init:
 
 $(SRC_FILES): init
 
-$(DIST_DIR):
-	@mkdir -p $(DIST_DIR)
+$(DIST_DIR): init
 
 $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 	@echo "Building $(DIST_FILE)"; \
