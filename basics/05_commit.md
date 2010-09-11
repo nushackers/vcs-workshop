@@ -17,10 +17,40 @@
 
 	...
 
-!SLIDE code smaller
+!SLIDE
+
+## What says you, `hg status`?
+
+!SLIDE code
 
 	$ hg status
 	M index.html
+
+!SLIDE
+
+<pre><code>
+? = not tracked
+A = added
+C = clean
+<span style="background-color: red">M = modified</span>
+</code></pre>
+
+!SLIDE
+
+# Clever!
+
+!SLIDE
+
+# What changed?
+
+!SLIDE
+
+# Enter `hg diff`
+
+## "diff" as in "difference"
+
+!SLIDE code smaller
+
 	$ hg diff
 	diff -r 133a7e85bfbf index.html
 	--- a/index.html	Sun Sep 12 01:33:50 2010 +0800
