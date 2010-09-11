@@ -85,6 +85,27 @@
 
 !SLIDE
 
+## What's our history thus far?
+
+!SLIDE small
+
+	$ hg log
+	changeset:   0:8c0ed141af95
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 01:50:25 2010 +0800
+	summary:     first step towards world domination
+
+!SLIDE bullets incremental
+
+# `hg log`
+
+* Shows history
+
+* More on fields later
+
+!SLIDE
+
 # Let's check our status
 
 !SLIDE
