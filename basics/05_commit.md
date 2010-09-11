@@ -81,7 +81,7 @@ C = clean
 !SLIDE
 
 <pre><code>
-diff -r 133a7e85bfbf <span style="background-color: green">index.html</span>
+diff -r 133a7e85bfbf <span style="background-color: lime">index.html</span>
 --- a/index.html	Sun Sep 12 01:33:50 2010 +0800
 +++ b/index.html	Sun Sep 12 01:33:58 2010 +0800
 @@ -1,6 +1,13 @@
