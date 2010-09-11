@@ -28,11 +28,11 @@ BASICS_FILES = $(SRC_DIR)/basics/01_basics.md \
 	$(SRC_DIR)/basics/05_commit.md \
 	$(SRC_DIR)/basics/06_summary.md
 
-STATIC_FILES = $(SRC_DIR)/showoff.json \
-	$(SRC_DIR)/styles.css \
+STATIC_FILES = $(SRC_DIR)/styles.css \
 	$(SRC_DIR)/repo.css
 
-SRC_FILES = $(INTRO_FILES) $(BASIC_FILES) $(STATIC_FILES)
+SRC_FILES = $(SRC_DIR)/showoff.json \
+	$(INTRO_FILES) $(BASIC_FILES) $(STATIC_FILES)
 
 DIST_FILE = $(BUILD_DIR)/index.html
 
@@ -69,7 +69,10 @@ $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 		cd $(SRC_DIR) && \
 		$(SHOWOFF) static > /dev/null; \
 	)	&& ( \
-		mv $(SRC_DIR)/static/* $(DIST_DIR); \
+		mv $(SRC_DIR)/static/* $(DIST_DIR) \
+		&& for file in $(STATIC_FILES); do\
+			cp $$file $(DIST_DIR)/; \
+		done; \
 	);
 
 	@echo -n ""; \
