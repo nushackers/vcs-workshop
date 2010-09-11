@@ -64,20 +64,21 @@ $(DIST_DIR): init
 $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 	@echo "Building $(DIST_FILE)"; \
 	( \
-		cd $(SRC_DIR); \
-		$(SHOWOFF) static $(DIST_DIR); \
+		rm -r $(DIST_DIR)/* && \
+		cd $(SRC_DIR) && \
+		$(SHOWOFF) static > /dev/null; \
+	)	&& ( \
+		mv $(SRC_DIR)/static/* $(DIST_DIR); \
 	);
 
 	@echo -n ""; \
-	FILE=$(subst $(DIST_DIR)/,,$(DIST_FILE)); \
 	( \
 		cd $(DIST_DIR); \
-		if [ $$(git ls-files -m | grep -F $$FILE > /dev/null) ]; then \
-		  git add $$FILE \
-		  && git commit -m "update static presentation" -q \
+		! git diff > /dev/null && (\
+		  git commit -am "update static presentation" -q \
 		  && git push -q \
 			  || exit $$?; \
-		else \
+		) || ( \
 			echo "nothing changed"; \
-		fi; \
+		); \
 	);
