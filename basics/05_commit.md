@@ -69,3 +69,33 @@ C = clean
 	 </head>
 
 	 <body>
+
+!SLIDE
+
+# In Unified diff format
+
+!SLIDE
+
+# Which file?
+
+!SLIDE
+
+<pre><code>
+diff -r 133a7e85bfbf <span style="background-color: green">index.html</span>
+--- a/index.html	Sun Sep 12 01:33:50 2010 +0800
++++ b/index.html	Sun Sep 12 01:33:58 2010 +0800
+@@ -1,6 +1,13 @@
+</code></pre>
+
+!SLIDE
+
+# Where in the file?
+
+!SLIDE
+
+<pre><code>
+diff -r 133a7e85bfbf index.html
+--- a/index.html	Sun Sep 12 01:33:50 2010 +0800
++++ b/index.html	Sun Sep 12 01:33:58 2010 +0800
+<span style="background-color: red">@@ -1,6 +1,13 @@</span>
+</code></pre>
