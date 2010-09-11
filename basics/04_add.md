@@ -32,6 +32,8 @@
 
 # Check your repo
 
+## <br />
+
 	$ hg status
 	? index.html
 
@@ -42,7 +44,9 @@
 
 !SLIDE
 
-# Some common status codes:
+## Some common status codes:
+
+## <br />
 
 	? = not tracked
 	A = added
@@ -66,6 +70,8 @@
 !SLIDE small
 
 # Really do it
+
+## <br />
 
 	$ hg commit -m "first step towards world domination"
 	$ hg status
