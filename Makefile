@@ -13,6 +13,7 @@ LEN = $(words $(REPOS))
 
 SRC_DIR = $(word 1, $(REPOS))
 DIST_DIR = $(word 2, $(REPOS))
+DIST_DIR_STATIC = $(DIST_DIR)/file
 
 INTRO_FILES = $(SRC_DIR)/intro/01_title.md \
 	$(SRC_DIR)/intro/03_rationale.md \
@@ -69,10 +70,18 @@ $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 		cd $(SRC_DIR) && \
 		$(SHOWOFF) static > /dev/null; \
 	)	&& ( \
-		mv $(SRC_DIR)/static/* $(DIST_DIR) \
-		&& for file in $(STATIC_FILES); do\
-			cp $$file $(DIST_DIR)/; \
-		done; \
+		mv $(SRC_DIR)/static/* $(DIST_DIR) && ( \
+			test -a $(DIST_DIR_STATIC) && ( \
+				test -d $(DIST_DIR_STATIC) || (\
+					rm $(DIST_DIR_STATIC); \
+					mkdir $(DIST_DIR_STATIC); \
+				); \
+			) || mkdir $(DIST_DIR_STATIC); \
+		) && (\
+			for file in $(STATIC_FILES); do \
+				cp $$file $(DIST_DIR_STATIC)/; \
+			done; \
+		); \
 	);
 
 	@echo -n ""; \
