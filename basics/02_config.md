@@ -7,7 +7,7 @@
 		[ui]
 		username = John Tan <john@johntan.com>
 
-!SLIDE bullets bullets-left smaller
+!SLIDE bullets smaller left
 
 # put
 
