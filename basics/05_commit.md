@@ -82,8 +82,8 @@ C = clean
 
 <pre><code>
 diff -r 133a7e85bfbf <span style="background-color: lime">index.html</span>
---- a/index.html	Sun Sep 12 01:33:50 2010 +0800
-+++ b/index.html	Sun Sep 12 01:33:58 2010 +0800
+--- a/<span style="background-color: lime">index.html</span>	Sun Sep 12 01:33:50 2010 +0800
++++ b/<span style="background-color: lime">index.html</span>	Sun Sep 12 01:33:58 2010 +0800
 @@ -1,6 +1,13 @@
 </code></pre>
 
