@@ -53,21 +53,20 @@
 
 	<div class="right">
 		<span class="title">Working copy</span>
-			<div class="file-container">
-				<div class="file" id="file1">
-					<span>file1</span>
-				</div>
-
-				<div class="file" id="file2">
-					<span>file2</span>
-				</div>
-
-				<div class="file" id="file3">
-					<span>file3</span>
-				</div>
-
-				<div class="clear"></div>
+		<div class="file-container">
+			<div class="file" id="file1">
+				<span>file1</span>
 			</div>
+
+			<div class="file" id="file2">
+				<span>file2</span>
+			</div>
+
+			<div class="file" id="file3">
+				<span>file3</span>
+			</div>
+
+			<div class="clear"></div>
 		</div>
 	</div>
 </div>
