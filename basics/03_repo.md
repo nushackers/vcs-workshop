@@ -1,16 +1,27 @@
-!SLIDE bullets
+!SLIDE center
 
-# Term: Repository #
+# Your first repository #
 
-* "repo" in short
+	$ hg init vcs-demo
 
-!SLIDE small
-# Creating a new repository #
+!SLIDE
+
+# `hg init` creates a fresh, new repository
+
+!SLIDE
+
+## Other ways of creating a repository
 
 	# in the current directory
 	$ hg init
 	# in the folder called `mynewproject`
 	$ hg init mynewproject
+
+!SLIDE bullets
+
+# Term: Repository #
+
+* "repo" in short
 
 !SLIDE small
 
