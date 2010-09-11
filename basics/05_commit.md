@@ -43,11 +43,11 @@ C = clean
 
 # What changed?
 
-!SLIDE
+!SLIDE bullets incremental
 
 # Enter `hg diff`
 
-## "diff" as in "difference"
+- *No diff lah*
 
 !SLIDE code smaller
 
