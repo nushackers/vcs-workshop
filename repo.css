@@ -1,0 +1,56 @@
+#repo-diagram {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+#repo-diagram .left {
+	float: left;
+	border: 5px solid black;
+}
+
+#repo-diagram .right {
+	margin-left: 200px;
+	border: 5px solid black;
+}
+
+#repo-diagram .hg {
+	background-color: #FF0000;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+#repo-diagram .hg span {
+	font-size: 2em;
+	height: 100px;
+	line-height: 100px;
+	margin-left: -10px;
+}
+
+#repo-diagram .file-container {
+	position: relative;
+}
+
+#repo-diagram .file {
+	width: 200px;
+	height: 250px;
+	float: left;
+}
+
+#repo-diagram #file1 {
+	background-color: #00ff00;
+	top: 20px;
+}
+
+#repo-diagram #file2 {
+	background-color: #00ff55;
+	margin-left: 300px;
+	top: 100px;
+}
+
+#repo-diagram #file3 {
+	background-color: #00ff99;
+	margin-left: 50px;
+	top: 300px;
+}

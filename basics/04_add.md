@@ -2,9 +2,14 @@
 
 # Your first file
 
-- Grab `index.html` from here:
+### <br />
 
-  [http://github.com/rctay/nus-hack-vcs-slides/zipball/01-base](http://github.com/rctay/nus-hack-vcs-slides/zipball/01-base)
+## Grab it like this:
+
+### <br />
+
+	$ wget http://github.com/rctay/\
+	nus-hack-vcs-slides/raw/01-base/index.html
 
 !SLIDE commandline
 
@@ -12,17 +17,13 @@
 	index.html
 
 	$ cat index.html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>*The* Next Facebook</title>
 	</head>
 
 	<body>
-		<p id="message">Be afraid, Mark, be very afraid.</p>
+		<p>Be afraid, Mark, be very afraid.</p>
 	</body>
 
 	</html>
@@ -30,6 +31,8 @@
 !SLIDE
 
 # Check your repo
+
+## <br />
 
 	$ hg status
 	? index.html
@@ -41,7 +44,9 @@
 
 !SLIDE
 
-# Some common status codes:
+## Some common status codes:
+
+## <br />
 
 	? = not tracked
 	A = added
@@ -60,13 +65,51 @@
 
 !SLIDE
 
-# But `git add` is only a statement of intent
+# But `hg add` is only a statement of intent
 
 !SLIDE small
 
 # Really do it
 
+## <br />
+
 	$ hg commit -m "first step towards world domination"
+
+!SLIDE
+
+# `hg commit`...
+
+## saves the current state
+
+## creates a checkpoint in history
+
+!SLIDE
+
+## What's our history thus far?
+
+!SLIDE small
+
+	$ hg log
+	changeset:   0:8c0ed141af95
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 01:50:25 2010 +0800
+	summary:     first step towards world domination
+
+!SLIDE bullets incremental
+
+# `hg log`
+
+* Shows history
+
+* More on fields later
+
+!SLIDE
+
+# Let's check our status
+
+!SLIDE
+
 	$ hg status
 
 !SLIDE
@@ -77,5 +120,16 @@
 
 # But for the paranoid:
 
+## <br />
+
 	$ hg status --all
 	C index.html
+
+!SLIDE
+
+<pre><code>
+? = not tracked
+A = added
+<span style="background-color: lime">C = clean</span>
+M = modified
+</code></pre>

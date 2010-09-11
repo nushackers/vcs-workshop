@@ -1,0 +1,7 @@
+.left h1,
+.left h2,
+.left h3,
+.left.bullets ul li
+{
+	text-align: left;
+}
