@@ -31,3 +31,14 @@
 - with TortoiseHg,
 
   Global Settings -> Commit -> Username
+
+!SLIDE
+
+## Change your editor also?
+
+!SLIDE
+
+# In `.hgrc`:
+
+	[ui]
+	editor=/my/amazing/editor
