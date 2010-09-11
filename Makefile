@@ -11,17 +11,25 @@ LEN = $(words $(REPOS))
 SRC_DIR = $(word 1, $(REPOS))
 DIST_DIR = $(word 2, $(REPOS))
 
-BASE_FILES = $(SRC_DIR)/jquery.xdomainajax.js \
-	$(SRC_DIR)/Util.js \
-	$(SRC_DIR)/Signals.js \
-	$(SRC_DIR)/Object.js \
-	$(SRC_DIR)/Ripper.js \
-	$(SRC_DIR)/TimeTable.js \
-	$(SRC_DIR)/Set.js \
-	$(SRC_DIR)/Main.js \
-	$(SRC_DIR)/Dragger.js \
+INTRO_FILES = $(SRC_DIR)/intro/01_title.md \
+	$(SRC_DIR)/intro/03_rationale.md \
+	$(SRC_DIR)intro/04_install_check.md \
+	$(SRC_DIR)intro/Mercurial_logo.png \
+	$(SRC_DIR)intro/msys_icon.jpg \
+	$(SRC_DIR)intro/tortoise_hg_logo.png
 
-SRC_FILES = $(BASE_FILES)
+BASICS_FILES = $(SRC_DIR)/basics/01_basics.md \
+	$(SRC_DIR)/basics/02_config.md \
+	$(SRC_DIR)/basics/03_repo.md \
+	$(SRC_DIR)/basics/04_add.md \
+	$(SRC_DIR)/basics/05_commit.md \
+	$(SRC_DIR)/basics/06_summary.md
+
+STATIC_FILES = $(SRC_DIR)/showoff.json \
+	$(SRC_DIR)/styles.css \
+	$(SRC_DIR)/repo.css
+
+SRC_FILES = $(INTRO_FILES) $(BASIC_FILES) $(STATIC_FILES)
 
 DIST_FILE = $(BUILD_DIR)/index.html
 
