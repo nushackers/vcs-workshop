@@ -1,11 +1,13 @@
-!SLIDE
+!SLIDE bullets incremental
 
 # User info #
 
-## tell hg who you are ##
-
 		[ui]
 		username = John Tan <john@johntan.com>
+
+*
+
+* tell hg who you are
 
 !SLIDE bullets smaller left
 
