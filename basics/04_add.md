@@ -2,9 +2,14 @@
 
 # Your first file
 
-- Grab `index.html` from here:
+### <br />
 
-  [http://github.com/rctay/nus-hack-vcs-slides/tree/01-base/index.html](http://github.com/rctay/nus-hack-vcs-slides/tree/01-base/index.html)
+## Grab it like this:
+
+### <br />
+
+	$ wget http://github.com/rctay/\
+	nus-hack-vcs-slides/tree/01-base/index.html
 
 !SLIDE commandline
 
