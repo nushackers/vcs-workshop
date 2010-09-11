@@ -9,7 +9,7 @@
 ### <br />
 
 	$ wget http://github.com/rctay/\
-	nus-hack-vcs-slides/tree/01-base/index.html
+	nus-hack-vcs-slides/raw/01-base/index.html
 
 !SLIDE commandline
 
