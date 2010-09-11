@@ -2,6 +2,8 @@
 
 # Your first repository #
 
+## <br />
+
 	$ hg init vcs-demo
 
 !SLIDE
