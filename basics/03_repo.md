@@ -14,6 +14,8 @@
 
 ## Other ways of creating a repository
 
+## <br />
+
 	# in the current directory
 	$ hg init
 	# in the folder called `mynewproject`
