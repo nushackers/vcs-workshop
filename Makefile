@@ -87,11 +87,12 @@ $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 	@echo -n ""; \
 	( \
 		cd $(DIST_DIR); \
-		! git diff > /dev/null && (\
+		! git diff --exit-code > /dev/null && (\
 			test "$(SHOULD_COMMIT)" == YesPlease \
 			&& git commit -am "update static presentation" -q \
-		  && git push -q \
-			  || exit $$?; \
+		  && ( \
+				git push -q || exit $$?; \
+			) || echo "skipping commiting"; \
 		) || ( \
 			echo "nothing changed"; \
 		); \
