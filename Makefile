@@ -1,6 +1,7 @@
 BUILD_DIR = build
 
 SHOWOFF = showoff
+SHOULD_COMMIT = YesPlease
 
 # list of repos-branches - each repo corresponds to a branch
 REPOS = $(BUILD_DIR)/src \
@@ -75,7 +76,8 @@ $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 	( \
 		cd $(DIST_DIR); \
 		! git diff > /dev/null && (\
-		  git commit -am "update static presentation" -q \
+			test "$(SHOULD_COMMIT)" == YesPlease \
+			&& git commit -am "update static presentation" -q \
 		  && git push -q \
 			  || exit $$?; \
 		) || ( \
