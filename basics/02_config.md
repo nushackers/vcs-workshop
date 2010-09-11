@@ -16,7 +16,7 @@
 
 - on Windows,
 
-  `USERPROFILE%\.hgrc`
+  `%USERPROFILE%\.hgrc`
 
 - with TortoiseHg,
 
