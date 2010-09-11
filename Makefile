@@ -1,5 +1,7 @@
 BUILD_DIR = build
 
+SHOWOFF = showoff
+
 # list of repos-branches - each repo corresponds to a branch
 REPOS = $(BUILD_DIR)/src \
 	$(BUILD_DIR)/pages
@@ -63,7 +65,7 @@ $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 	@echo "Building $(DIST_FILE)"; \
 	( \
 		cd $(SRC_DIR); \
-		showoff static $(DIST_DIR); \
+		$(SHOWOFF) static $(DIST_DIR); \
 	);
 
 	@echo -n ""; \
