@@ -7,9 +7,15 @@
 		[ui]
 		username = John Tan <john@johntan.com>
 
-!SLIDE bullets
+!SLIDE bullets smaller
 
-# put this in:
+# put
+
+		[ui]
+		username = John Tan <john@johntan.com>
+
+# in:
+
 - on Unix,
 
   `~/.hgrc`
