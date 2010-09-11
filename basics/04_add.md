@@ -120,5 +120,7 @@
 
 # But for the paranoid:
 
+## <br />
+
 	$ hg status --all
 	C index.html
