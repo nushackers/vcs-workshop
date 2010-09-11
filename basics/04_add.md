@@ -124,3 +124,12 @@
 
 	$ hg status --all
 	C index.html
+
+!SLIDE
+
+<pre><code>
+? = not tracked
+A = added
+<span style="background-color: lime">C = clean</span>
+M = modified
+</code></pre>
