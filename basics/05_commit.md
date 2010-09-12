@@ -169,7 +169,7 @@ diff -r 133a7e85bfbf index.html
 
 # By default, only summary is shown
 
-	$ hg log -l 1
+	$ hg log --limit 1
 	changeset:   1:979b5e026adb
 	tag:         tip
 	user:        Tay Ray Chuan <rctay89@gmail.com>
@@ -180,7 +180,7 @@ diff -r 133a7e85bfbf index.html
 
 # To show full message,
 
-	$ hg log -l 1 -v
+	$ hg log --limit 1 -v
 	changeset:   1:d0be750b3286
 	tag:         tip
 	user:        Tay Ray Chuan <rctay89@gmail.com>
