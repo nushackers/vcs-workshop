@@ -28,7 +28,7 @@
 
 	</html>
 
-!SLIDE
+!SLIDE code-narrower
 
 # Check your repo
 
@@ -42,7 +42,7 @@
 # `hg status` shows you...
 - ...status of files in your local repo
 
-!SLIDE
+!SLIDE code-narrow
 
 ## Some common status codes:
 

@@ -5,3 +5,13 @@
 {
 	text-align: left;
 }
+
+.code-narrow pre {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.code-narrower pre {
+	width: 400px;
+	margin: 0 auto;
+}
