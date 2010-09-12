@@ -37,7 +37,7 @@
 	$ hg status
 	? index.html
 
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # `hg status` shows you...
 - ...status of files in your local repo
