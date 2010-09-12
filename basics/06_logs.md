@@ -83,3 +83,17 @@ summary:     changed colour of text
 # Revision hashes are
 
 - long
+
+- SHA-1 hash
+
+- unique across all repositories
+
+!SLIDE bullets incremental
+
+- short (12):
+
+  `979b5e026adb`
+
+- long (40):
+
+  `979b5e026adb0354c93d169b6d1778c734145a43`
