@@ -123,6 +123,7 @@ diff -r 133a7e85bfbf index.html
 	HG: this is ignored!!!
 	changed colour of text
 
+	That's about it.
 	HG: Enter commit message.  Lines beginning with 'HG:' are removed.
 	HG: Leave message empty to abort commit.
 	HG: --
@@ -141,3 +142,52 @@ diff -r 133a7e85bfbf index.html
 - delete all lines, or
 
 - prefix all lines with `HG:`
+
+!SLIDE
+
+# Tips on writing commit messages
+
+!SLIDE small code-centre
+
+# Bad!
+
+## <br />
+
+	this is what i did 1) this 2) that 3) this and that; nice i like what i did
+
+!SLIDE small code-centre
+
+# Write like email
+
+## <br />
+
+	first line: short summary, like "subject"
+	<second line empty>
+	third line onwards: more details, if required; like "body".
+
+!SLIDE small
+
+# By default, only summary is shown
+
+	$ hg log -l 1
+	changeset:   1:979b5e026adb
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:06:10 2010 +0800
+<pre><code>summary:     <span style="background-color: lime">changed colour of text</span></code></pre>
+
+!SLIDE small
+
+# To show full message,
+
+	$ hg log -l 1 -v
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	files:       index.html
+	description:
+<pre><code><span style="background-color: lime">
+changed colour of text
+
+That's about it.</span></code></pre>
