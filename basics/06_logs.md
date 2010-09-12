@@ -8,7 +8,7 @@
 	changeset:   1:d0be750b3286
 	tag:         tip
 	user:        Tay Ray Chuan <rctay89@gmail.com>
-	date:        Sun Sep 12 22:06:10 2010 +0800
+	date:        Sun Sep 12 22:58:32 2010 +0800
 	summary:     changed colour of text
 
 	changeset:   0:13f2349a10f7
@@ -28,7 +28,7 @@
 <span style="background-color: lime">changeset</span>:   1:d0be750b3286
 tag:         tip
 user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
-date:        Sun Sep 12 22:06:10 2010 +0800
+date:        Sun Sep 12 22:58:32 2010 +0800
 summary:     changed colour of text
 </code></pre>
 
@@ -50,7 +50,7 @@ summary:     changed colour of text
 changeset:   <span style="background-color: lime">1</span>:d0be750b3286
 tag:         tip
 user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
-date:        Sun Sep 12 22:06:10 2010 +0800
+date:        Sun Sep 12 22:58:32 2010 +0800
 summary:     changed colour of text
 </code></pre>
 
@@ -74,7 +74,7 @@ summary:     changed colour of text
 changeset:   1:<span style="background-color: lime">d0be750b3286</span>
 tag:         tip
 user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
-date:        Sun Sep 12 22:06:10 2010 +0800
+date:        Sun Sep 12 22:58:32 2010 +0800
 summary:     changed colour of text
 </code></pre>
 
