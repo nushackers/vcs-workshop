@@ -4,10 +4,11 @@
  */
 var old_centerSlides = centerSlides;
 centerSlides = function(p_slides) {
-	$(p_slides).children(".content.code-centre").each(function(s, slide) {
-		var e = $(slide);
-		var code_block = e.children("pre").first();
-		code_block.css("margin-left", (e.width() - code_block.children("code").width()) / 2);
+	var e = $(".content.code-centre", p_slides);
+	var w = e.first().width();
+	$("pre", e).each(function(s, code_block) {
+		var code_block$ = $(code_block);
+		code_block$.css("margin-left", (w - $("code", code_block$).width()) / 2);
 	});
 	old_centerSlides(p_slides);
 }
