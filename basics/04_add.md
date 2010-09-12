@@ -48,6 +48,18 @@
 
 ## <br />
 
+	? = not tracked
+	A = added
+	C = clean
+	M = modified
+
+!SLIDE code-narrow
+
+	$ hg status
+	? index.html
+
+## <br />
+
 <pre><code><span style="background-color: lime">? = not tracked</span></code></pre>
 	A = added
 	C = clean
