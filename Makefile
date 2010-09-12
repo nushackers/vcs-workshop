@@ -66,11 +66,18 @@ $(DIST_DIR): init
 $(DIST_FILE): $(DIST_DIR) $(SRC_FILES)
 	@echo "Building $(DIST_FILE)"; \
 	( \
-		rm -r $(DIST_DIR)/* && \
-		cd $(SRC_DIR) && \
+		cd $(SRC_DIR) && ( \
+		 test -d static && \
+		 rm -r static || \
+		 exit 0 \
+		) && \
 		$(SHOWOFF) static > /dev/null; \
 	)	&& ( \
-		mv $(SRC_DIR)/static/* $(DIST_DIR) && ( \
+		( \
+			[ "$$(ls $(DIST_DIR))" ] && \
+			rm -r $(DIST_DIR)/* || \
+			exit 0 \
+		) && mv $(SRC_DIR)/static/* $(DIST_DIR) && ( \
 			test -a $(DIST_DIR_STATIC) && ( \
 				test -d $(DIST_DIR_STATIC) || (\
 					rm $(DIST_DIR_STATIC); \
