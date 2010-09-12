@@ -195,6 +195,58 @@ date:        Sun Sep 12 22:58:32 2010 +0800</span>
 	date:        Sun Sep 12 22:58:32 2010 +0800
 	summary:     changed colour of text
 
+!SLIDE smaller
+
+# What changed?
+
+	$ hg log -r 1 -p
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	summary:     changed colour of text
+
+	diff -r 13f2349a10f7 -r d0be750b3286 index.html
+	--- a/index.html        Sun Sep 12 21:49:30 2010 +0800
+	+++ b/index.html        Sun Sep 12 22:58:32 2010 +0800
+	@@ -1,6 +1,13 @@
+	 <html>
+	 <head>
+		<title>*The* Next Facebook</title>
+	+
+	+       <style type="text/css">
+	+       p#message {
+	+               color: #FF0000;
+	+       }
+	+       </style>
+	+
+	 </head>
+
+	 <body>
+
+!SLIDE smaller
+
+# Also with `hg diff`:
+
+	$ hg diff -r 0:1
+	diff -r 13f2349a10f7 -r d0be750b3286 index.html
+	--- a/index.html        Sun Sep 12 21:49:30 2010 +0800
+	+++ b/index.html        Sun Sep 12 22:58:32 2010 +0800
+	@@ -1,6 +1,13 @@
+	 <html>
+	 <head>
+		<title>*The* Next Facebook</title>
+	+
+	+       <style type="text/css">
+	+       p#message {
+	+               color: #FF0000;
+	+       }
+	+       </style>
+	+
+	 </head>
+
+	 <body>
+
 !SLIDE bullets incremental
 
 # Different display styles
