@@ -2,4 +2,4 @@
 
 # That's it!
 
-- (almost)
+- (for basic workflow)
