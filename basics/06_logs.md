@@ -27,7 +27,7 @@
 <pre><code>
 <span style="background-color: lime">changeset</span>:   1:979b5e026adb
 tag:         tip
-user:        Tay Ray Chuan <rctay89@gmail.com>
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:06:10 2010 +0800
 summary:     changed colour of text
 </code></pre>
@@ -49,7 +49,7 @@ summary:     changed colour of text
 <pre><code>
 changeset:   <span style="background-color: lime">1</span>:979b5e026adb
 tag:         tip
-user:        Tay Ray Chuan <rctay89@gmail.com>
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:06:10 2010 +0800
 summary:     changed colour of text
 </code></pre>
@@ -73,7 +73,7 @@ summary:     changed colour of text
 <pre><code>
 changeset:   1:<span style="background-color: lime">979b5e026adb</span>
 tag:         tip
-user:        Tay Ray Chuan <rctay89@gmail.com>
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:06:10 2010 +0800
 summary:     changed colour of text
 </code></pre>
