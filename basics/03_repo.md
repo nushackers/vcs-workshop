@@ -18,6 +18,7 @@
 
 	# in the current directory
 	$ hg init
+
 	# in the folder called `mynewproject`
 	$ hg init mynewproject
 
