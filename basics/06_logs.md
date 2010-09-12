@@ -5,7 +5,7 @@
 !SLIDE small
 
 	$ hg log
-	changeset:   1:979b5e026adb
+	changeset:   1:d0be750b3286
 	tag:         tip
 	user:        Tay Ray Chuan <rctay89@gmail.com>
 	date:        Sun Sep 12 22:06:10 2010 +0800
@@ -25,7 +25,7 @@
 # Changeset
 
 <pre><code>
-<span style="background-color: lime">changeset</span>:   1:979b5e026adb
+<span style="background-color: lime">changeset</span>:   1:d0be750b3286
 tag:         tip
 user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:06:10 2010 +0800
@@ -47,7 +47,7 @@ summary:     changed colour of text
 # Revision number
 
 <pre><code>
-changeset:   <span style="background-color: lime">1</span>:979b5e026adb
+changeset:   <span style="background-color: lime">1</span>:d0be750b3286
 tag:         tip
 user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:06:10 2010 +0800
@@ -71,7 +71,7 @@ summary:     changed colour of text
 # Revision hash
 
 <pre><code>
-changeset:   1:<span style="background-color: lime">979b5e026adb</span>
+changeset:   1:<span style="background-color: lime">d0be750b3286</span>
 tag:         tip
 user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:06:10 2010 +0800
@@ -92,8 +92,8 @@ summary:     changed colour of text
 
 - short (12):
 
-  `979b5e026adb`
+  `d0be750b3286`
 
 - long (40):
 
-  `979b5e026adb0354c93d169b6d1778c734145a43`
+  `d0be750b3286852f74d2c14f2db315389a1e8b90`
