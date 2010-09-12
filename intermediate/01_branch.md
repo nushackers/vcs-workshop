@@ -2,9 +2,23 @@
 
 # Your first branch #
 
+!SLIDE
+
+# What are branches?
+
 !SLIDE bullets incremental
 
-# "Easy" branching
+# Branches let you...
+
+- separate out unstable stuff
+
+- "cook" complex features
+
+!SLIDE bullets incremental
+
+# Presenting
+
+- "easy" branching
 
 - physical
 
