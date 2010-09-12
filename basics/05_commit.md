@@ -133,3 +133,11 @@ diff -r 133a7e85bfbf index.html
 !SLIDE
 
 # Save and exit
+
+!SLIDE bullets incremental
+
+# Note: to abort,
+
+- delete all lines, or
+
+- prefix all lines with `HG:`
