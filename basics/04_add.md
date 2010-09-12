@@ -28,7 +28,7 @@
 
 	</html>
 
-!SLIDE
+!SLIDE code-centre
 
 # Check your repo
 
@@ -37,12 +37,12 @@
 	$ hg status
 	? index.html
 
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # `hg status` shows you...
 - ...status of files in your local repo
 
-!SLIDE
+!SLIDE code-centre
 
 ## Some common status codes:
 
@@ -53,11 +53,23 @@
 	C = clean
 	M = modified
 
+!SLIDE code-centre
+
+	$ hg status
+	? index.html
+
+## <br />
+
+<pre><code><span style="background-color: lime">? = not tracked</span></code></pre>
+	A = added
+	C = clean
+	M = modified
+
 !SLIDE
 
 # How do you tell `hg` to track your file?
 
-!SLIDE
+!SLIDE code-centre
 
 	$ hg add index.html
 	$ hg status
@@ -108,7 +120,7 @@
 
 # Let's check our status
 
-!SLIDE
+!SLIDE code-centre
 
 	$ hg status
 
