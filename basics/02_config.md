@@ -36,7 +36,7 @@
 
 ## Change your editor also?
 
-!SLIDE code-narrow
+!SLIDE code-centre
 
 # In `.hgrc`:
 

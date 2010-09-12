@@ -28,7 +28,7 @@
 
 	</html>
 
-!SLIDE code-narrower
+!SLIDE code-centre
 
 # Check your repo
 
@@ -42,7 +42,7 @@
 # `hg status` shows you...
 - ...status of files in your local repo
 
-!SLIDE code-narrow
+!SLIDE code-centre
 
 ## Some common status codes:
 
@@ -53,7 +53,7 @@
 	C = clean
 	M = modified
 
-!SLIDE code-narrow
+!SLIDE code-centre
 
 	$ hg status
 	? index.html
@@ -69,7 +69,7 @@
 
 # How do you tell `hg` to track your file?
 
-!SLIDE
+!SLIDE code-centre
 
 	$ hg add index.html
 	$ hg status
@@ -120,7 +120,7 @@
 
 # Let's check our status
 
-!SLIDE
+!SLIDE code-centre
 
 	$ hg status
 
