@@ -48,7 +48,7 @@
 
 ## <br />
 
-	? = not tracked
+<pre><code><span style="background-color: lime">? = not tracked</span></code></pre>
 	A = added
 	C = clean
 	M = modified
