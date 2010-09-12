@@ -133,3 +133,104 @@ user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 22:58:32 2010 +0800</span>
 <span style="background-color: lime">summary:     changed colour of text</span>
 </code></pre>
+
+!SLIDE
+
+# More ways of reviewing history
+
+!SLIDE small
+
+# At a revision (number)
+
+## <br />
+
+	$ hg log -r 1
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	summary:     changed colour of text
+
+!SLIDE small
+
+# At a revision (hash)
+
+## <br />
+
+	$ hg log -r d0be750b3286
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	summary:     changed colour of text
+
+!SLIDE small
+
+# Between a range
+
+## <br />
+
+	$ hg log -r 0:1
+	changeset:   0:13f2349a10f7
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 21:49:30 2010 +0800
+	summary:     first step
+
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	summary:     changed colour of text
+
+!SLIDE small
+
+# Last &lt;n&gt; revisions
+
+## <br />
+
+	$ hg log --limit 1
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	summary:     changed colour of text
+
+!SLIDE bullets incremental
+
+# Different display styles
+
+- `default`
+
+- `compact`
+
+- `changelog`
+
+- `xml`
+
+!SLIDE small
+
+# With `--style compact`:
+
+## <br />
+
+	$ hg log --style compact
+	changeset:   1:d0be750b3286
+	tag:         tip
+	user:        Tay Ray Chuan <rctay89@gmail.com>
+	date:        Sun Sep 12 22:58:32 2010 +0800
+	summary:     changed colour of text
+
+!SLIDE smaller left
+
+# Custom:
+
+## `{field}`: uses a special field
+
+## `field|filter`: runs it through a filter
+
+## <br />
+
+	$ hg log --template \
+	"{node|short} {desc|firstline} - {author}\n"
+	d0be750b3286 changed colour of text - Tay Ray Chuan <rctay89@gmail.com>
+	13f2349a10f7 first step - Tay Ray Chuan <rctay89@gmail.com>
