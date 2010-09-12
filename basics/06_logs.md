@@ -97,3 +97,39 @@ summary:     changed colour of text
 - long (40):
 
   `d0be750b3286852f74d2c14f2db315389a1e8b90`
+
+!SLIDE small code-centre
+
+# Committer info
+
+<pre><code>
+changeset:   1:d0be750b3286
+tag:         tip
+<span style="background-color: lime">user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;</span>
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre>
+
+!SLIDE small code-centre
+
+# Commit datetime
+
+<pre><code>
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+<span style="background-color: lime">date:        Sun Sep 12 22:58:32 2010 +0800</span>
+summary:     changed colour of text
+</code></pre>
+
+!SLIDE small code-centre
+
+# Summary
+
+<pre><code>
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800</span>
+<span style="background-color: lime">summary:     changed colour of text</span>
+</code></pre>
