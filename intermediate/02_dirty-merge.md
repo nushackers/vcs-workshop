@@ -1,3 +1,11 @@
+!SLIDE
+
+# Life isn't always easy
+
+!SLIDE
+
+# Jane's repo/branch
+
 !SLIDE small
 
 	$ cat <<EOF | patch -p1
@@ -17,11 +25,7 @@
 
 !SLIDE
 
-# &lt;commit&gt;
-
-!SLIDE
-
-## Back in our original repo...
+# Mary's repo/branch
 
 !SLIDE small
 
@@ -42,20 +46,4 @@
 
 !SLIDE
 
-# &lt;commit&gt;
-
-!SLIDE small
-
-## Our histories:
-
-## <br />
-
-	a195a1714d81 add cool new feature - Tay Ray Chuan <rctay89@gmail.com>
-	d0be750b3286 changed colour of text - Tay Ray Chuan <rctay89@gmail.com>
-	13f2349a10f7 first step - Tay Ray Chuan <rctay89@gmail.com>
-
-## <br />
-
-	92652d8100d9 temper that confidence - Tay Ray Chuan <rctay89@gmail.com>
-	d0be750b3286 changed colour of text - Tay Ray Chuan <rctay89@gmail.com>
-	13f2349a10f7 first step - Tay Ray Chuan <rctay89@gmail.com>
+# Time to integrate
