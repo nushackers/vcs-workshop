@@ -120,3 +120,48 @@
 !SLIDE
 
 # Looks good, I want!
+
+!SLIDE
+
+# "Download" changes
+
+	$ hg pull ../new-feature/
+
+!SLIDE
+
+# A new head!
+
+!SLIDE small code-centre
+
+	$ hg glog
+	o  changeset:   3:8bf7b8c33422
+	|  tag:         tip
+	|  parent:      1:d2476a826953
+	|  user:        Tay Ray Chuan <rctay89@gmail.com>
+	|  date:        Mon Sep 13 17:02:02 2010 +0800
+	|  summary:     change colour
+	|
+	| @  changeset:   2:afe5666b10ee
+	|/   user:        Tay Ray Chuan <rctay89@gmail.com>
+	|    date:        Mon Sep 13 17:22:04 2010 +0800
+	|    summary:     important update
+
+!SLIDE bullets incremental
+
+# Term: Head
+
+- changeset with no children
+
+!SLIDE bullets incremental
+
+# Recall:
+
+- `hg commit` creates a new commit
+
+- points to previous commit
+
+!SLIDE center
+
+![heads diagram](wiki-heads.png)
+
+From: http://mercurial.selenic.com/wiki/Head
