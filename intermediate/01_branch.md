@@ -172,6 +172,8 @@ From: http://mercurial.selenic.com/wiki/Head
 
 !SLIDE
 
+# Combine them!
+
 	$ hg merge -r 3
 	$ hg commit -m "merge in new feature"
 
