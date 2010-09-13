@@ -62,9 +62,41 @@
 
 # &lt;commit&gt;
 
+!SLIDE bullets incremental
+
+# Meanwhile...
+
+- dev continues in mainline
+
+!SLIDE small code-centre
+
+	$ hg diff
+	diff --git a/index.html b/index.html
+	index 4ece737..355149a 100644
+	--- a/index.html
+	+++ b/index.html
+	@@ -6,6 +6,8 @@
+
+	 <body>
+	 	<p>Be afraid, Mark, be very afraid.</p>
+	+
+	+	<p>Pretty sure he will.</p>
+	 </body>
+
+	 </html>
+
+
 !SLIDE
 
-# Integrate new feature
+# &lt;commit&gt;
+
+!SLIDE
+
+# &lt;time passes&gt;
+
+!SLIDE
+
+# Integrate new feature!
 
 !SLIDE code-centre
 
