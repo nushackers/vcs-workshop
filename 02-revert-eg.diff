@@ -1,0 +1,12 @@
+diff --git a/index.html b/index.html
+index 4ece737..b141ee1 100644
+--- a/index.html
++++ b/index.html
+@@ -6,6 +6,7 @@
+ 
+ <body>
+ 	<p>Be afraid, Mark, be very afraid.</p>
++	<p>This is some <very bad> code.</p>
+ </body>
+ 
+ </html>
