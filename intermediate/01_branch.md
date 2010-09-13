@@ -165,3 +165,29 @@
 ![heads diagram](wiki-heads.png)
 
 From: http://mercurial.selenic.com/wiki/Head
+
+!SLIDE
+
+# Our histories are still divergent
+
+!SLIDE
+
+	$ hg merge -r 3
+	$ hg commit -m "merge in new feature"
+
+!SLIDE bullets incremental
+
+# Head commit now has two parents
+
+!SLIDE small
+
+	$ hg glog --style=compact
+	@    4[tip]:2,3   4b07e7ac7d3a   2010-09-13 17:37 +0800   rctay89
+	|\     merge in new feature
+	| |
+	| o  3:1   8bf7b8c33422   2010-09-13 17:02 +0800   rctay89
+	| |    change colour
+	| |
+	o |  2   afe5666b10ee   2010-09-13 17:22 +0800   rctay89
+	|/     important update
+
