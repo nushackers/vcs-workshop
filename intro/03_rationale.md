@@ -1,6 +1,8 @@
 !SLIDE
 
-# Why use version control? #
+# Recap:
+
+## why use version control?
 
 !SLIDE bullets incremental
 
