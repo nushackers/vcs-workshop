@@ -1,0 +1,15 @@
+21108d7 (first change, Mon Sep 13 15:24:15 2010 +0800, Tay Ray Chuan)
+diff --git a/index.html b/index.html
+index 1a1b23d..4ece737 100644
+--- a/index.html
++++ b/index.html
+@@ -1,5 +1,9 @@
+ <html>
+ 
++<head>
++	<title>*The* Next Facebook</title>
++</head>
++
+ <body>
+ 	<p>Be afraid, Mark, be very afraid.</p>
+ </body>
