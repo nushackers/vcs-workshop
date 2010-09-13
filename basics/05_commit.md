@@ -4,17 +4,13 @@
 
 !SLIDE code smaller
 
-	...
-  	<title>*The* Next Facebook</title>
+	<html>
 
-		<style type="text/css">
-		p#message {
-			color: #FF0000;
-		}
-		</style>
-
+	<head>
+		<title>*The* Next Facebook</title>
 	</head>
 
+	<body>
 	...
 
 !SLIDE
@@ -52,23 +48,21 @@ C = clean
 !SLIDE code smaller
 
 	$ hg diff
-	diff -r 133a7e85bfbf index.html
-	--- a/index.html	Sun Sep 12 01:33:50 2010 +0800
-	+++ b/index.html	Sun Sep 12 01:33:58 2010 +0800
-	@@ -1,6 +1,13 @@
-	 <html>
-	 <head>
+	diff -r c8a1664bbe05 -r b2c50c34e446 index.html
+	--- a/index.html	Mon Sep 13 16:23:36 2010 +0800
+	+++ b/index.html	Mon Sep 13 16:25:02 2010 +0800
+	@@ -3,6 +3,10 @@
 	 	<title>*The* Next Facebook</title>
-	+
-	+	<style type="text/css">
-	+	p#message {
-	+		color: #FF0000;
-	+	}
-	+	</style>
-	+
 	 </head>
 
+	+<head>
+	+	<title>*The* Next Facebook</title>
+	+</head>
+	+
 	 <body>
+	 	<p>Be afraid, Mark, be very afraid.</p>
+	 </body>
+
 
 !SLIDE
 
@@ -121,7 +115,7 @@ diff -r 133a7e85bfbf index.html
 ## <br />
 
 	HG: this is ignored!!!
-	changed colour of text
+	add title
 
 	That's about it.
 	HG: Enter commit message.  Lines beginning with 'HG:' are removed.
@@ -174,7 +168,7 @@ diff -r 133a7e85bfbf index.html
 	tag:         tip
 	user:        Tay Ray Chuan <rctay89@gmail.com>
 	date:        Sun Sep 12 22:06:10 2010 +0800
-<pre><code>summary:     <span style="background-color: lime">changed colour of text</span></code></pre>
+<pre><code>summary:     <span style="background-color: lime">add title</span></code></pre>
 
 !SLIDE small
 
@@ -188,6 +182,6 @@ diff -r 133a7e85bfbf index.html
 	files:       index.html
 	description:
 <pre><code><span style="background-color: lime">
-changed colour of text
+add title
 
 That's about it.</span></code></pre>
