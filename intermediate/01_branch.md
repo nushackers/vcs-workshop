@@ -121,7 +121,7 @@
 
 # Looks good, I want!
 
-!SLIDE
+!SLIDE code-centre
 
 # "Download" changes
 
