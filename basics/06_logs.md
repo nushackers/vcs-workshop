@@ -286,3 +286,15 @@ date:        Sun Sep 12 22:58:32 2010 +0800</span>
 	"{node|short} {desc|firstline} - {author}\n"
 	d0be750b3286 changed colour of text - Tay Ray Chuan <rctay89@gmail.com>
 	13f2349a10f7 first step - Tay Ray Chuan <rctay89@gmail.com>
+
+!SLIDE
+
+# Back in time?
+
+!SLIDE
+
+	$ hg update -r 1
+
+!SLIDE
+
+# &lt; variations &gt;
