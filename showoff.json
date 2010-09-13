@@ -3,6 +3,7 @@
 	"sections": [
 		{"section": "intro"},
 		{"section": "basics"},
-		{"section": "intermediate"}
+		{"section": "intermediate"},
+		{"section": "epilogue"}
 	]
 }
