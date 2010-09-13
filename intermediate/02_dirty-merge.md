@@ -47,3 +47,51 @@
 !SLIDE
 
 # Time to integrate
+
+!SLIDE code-centre
+
+# Pull from Jane
+
+	$ hg pull ../jane-repo
+
+!SLIDE code-centre
+
+# Pull from Mary
+
+	$ hg pull ../mary-repo
+
+!SLIDE
+
+# Heads?
+
+	$ hg glog --style=compact
+	o  6[tip]:1   93446f574041   2010-09-13 18:19 +0800   Mary
+	|    Mary says...
+	|
+	| o  5:1   93a3bd57110f   2010-09-13 18:19 +0800   Jane
+	|/     Jane says...
+	|
+	| @    4:2,3   4b07e7ac7d3a   2010-09-13 17:37 +0800   rctay89
+	| |\     merge in new feature
+
+!SLIDE
+
+# &lt; resolve merge &gt;
+
+!SLIDE code-centre
+
+# Try resolving again?
+
+	$ hg resolve --all
+
+!SLIDE
+
+# Discard merge?
+
+!SLIDE code-centre
+
+	$ hg update -C
+
+!SLIDE
+
+# &lt; commit &gt;
