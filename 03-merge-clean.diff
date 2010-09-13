@@ -1,0 +1,15 @@
+diff --git a/index.html b/index.html
+index 4ece737..98505c7 100644
+--- a/index.html
++++ b/index.html
+@@ -2,6 +2,10 @@
+ 
+ <head>
+ 	<title>*The* Next Facebook</title>
++
++	<style type="text/css">
++	p#message { color: red; }
++	</style>
+ </head>
+ 
+ <body>
