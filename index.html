@@ -34,6 +34,8 @@
   
 
   
+    <script type="text/javascript" src="js/code-centre.js"></script>
+  
 
   <script type="text/javascript">
   $(function(){
@@ -73,7 +75,9 @@
 
 <h2>Version Control Systems</h2></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="intro/03_rationale/1">
-<h1>Why use version control?</h1></div>
+<h1>Recap:</h1>
+
+<h2>why use version control?</h2></div>
 </div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intro/03_rationale/2">
 <h1>Do you do this?</h1>
 
@@ -184,7 +188,7 @@ dd03ac4 (completed task 2, Wed Sep 8 23:59:27 2010 +0800)
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/02_config/3">
 <h2>Change your editor also?</h2></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/02_config/4">
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/02_config/4">
 <h1>In <code>.hgrc</code>:</h1>
 
 <pre><code>[ui]
@@ -206,6 +210,7 @@ editor=/my/amazing/editor
 
 <pre><code># in the current directory
 $ hg init
+
 # in the folder called `mynewproject`
 $ hg init mynewproject
 </code></pre></div>
@@ -276,9 +281,6 @@ index.html
 
 </code><code class="command">$ cat index.html</code><code class="result">
 &lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;*The* Next Facebook&lt;/title&gt;
-&lt;/head&gt;
 
 &lt;body&gt;
     &lt;p&gt;Be afraid, Mark, be very afraid.&lt;/p&gt;
@@ -286,7 +288,7 @@ index.html
 
 &lt;/html&gt;
 </code></code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/3">
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/04_add/3">
 <h1>Check your repo</h1>
 
 <h2><br/></h2>
@@ -294,14 +296,14 @@ index.html
 <pre><code>$ hg status
 ? index.html
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/04_add/4">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/04_add/4">
 <h1><code>hg status</code> shows you...</h1>
 
 <ul>
 <li>...status of files in your local repo</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/5">
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/04_add/5">
 <h2>Some common status codes:</h2>
 
 <h2><br/></h2>
@@ -311,31 +313,45 @@ A = added
 C = clean
 M = modified
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/6">
-<h1>How do you tell <code>hg</code> to track your file?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/04_add/6">
+<pre><code>$ hg status
+? index.html
+</code></pre>
+
+<h2><br/></h2>
+
+<pre><code><span style="background-color: lime">? = not tracked</span></code></pre>
+
+
+<pre><code>A = added
+C = clean
+M = modified
+</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/7">
+<h1>How do you tell <code>hg</code> to track your file?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/04_add/8">
 <pre><code>$ hg add index.html
 $ hg status
 A index.html
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/8">
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/9">
 <h1>But <code>hg add</code> is only a statement of intent</h1></div>
-</div><div class="slide" data-transition="none"><div class="content small" ref="basics/04_add/9">
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/04_add/10">
 <h1>Really do it</h1>
 
 <h2><br/></h2>
 
 <pre><code>$ hg commit -m "first step towards world domination"
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/10">
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/11">
 <h1><code>hg commit</code>...</h1>
 
 <h2>saves the current state</h2>
 
 <h2>creates a checkpoint in history</h2></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/11">
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/12">
 <h2>What's our history thus far?</h2></div>
-</div><div class="slide" data-transition="none"><div class="content small" ref="basics/04_add/12">
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/04_add/13">
 <pre><code>$ hg log
 changeset:   0:8c0ed141af95
 tag:         tip
@@ -343,7 +359,7 @@ user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
 date:        Sun Sep 12 01:50:25 2010 +0800
 summary:     first step towards world domination
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/04_add/13">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/04_add/14">
 <h1><code>hg log</code></h1>
 
 <ul>
@@ -351,14 +367,14 @@ summary:     first step towards world domination
 <li><p>More on fields later</p></li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/14">
-<h1>Let's check our status</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/15">
+<h1>Let's check our status</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/04_add/16">
 <pre><code>$ hg status
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/16">
-<h1>If <code>hg status</code> is silent, then nothing has changed</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/17">
+<h1>If <code>hg status</code> is silent, then nothing has changed</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/18">
 <h1>But for the paranoid:</h1>
 
 <h2><br/></h2>
@@ -366,7 +382,7 @@ summary:     first step towards world domination
 <pre><code>$ hg status --all
 C index.html
 </code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/18">
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/04_add/19">
 
 
 <pre><code>
@@ -379,17 +395,13 @@ M = modified
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/05_commit/1">
 <h1>Your first change</h1></div>
 </div><div class="slide" data-transition="none"><div class="content code smaller" ref="basics/05_commit/2">
-<pre><code>...
-&lt;title&gt;*The* Next Facebook&lt;/title&gt;
+<pre><code>&lt;html&gt;
 
-    &lt;style type="text/css"&gt;
-    p#message {
-        color: #FF0000;
-    }
-    &lt;/style&gt;
-
+&lt;head&gt;
+    &lt;title&gt;*The* Next Facebook&lt;/title&gt;
 &lt;/head&gt;
 
+&lt;body&gt;
 ...
 </code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/05_commit/3">
@@ -421,23 +433,19 @@ C = clean
 </div>
 </div><div class="slide" data-transition="none"><div class="content code smaller" ref="basics/05_commit/9">
 <pre><code>$ hg diff
-diff -r 133a7e85bfbf index.html
---- a/index.html    Sun Sep 12 01:33:50 2010 +0800
-+++ b/index.html    Sun Sep 12 01:33:58 2010 +0800
-@@ -1,6 +1,13 @@
+diff -r c8a1664bbe05 -r b2c50c34e446 index.html
+--- a/index.html    Mon Sep 13 16:23:36 2010 +0800
++++ b/index.html    Mon Sep 13 16:25:02 2010 +0800
+@@ -1,5 +1,9 @@
  &lt;html&gt;
- &lt;head&gt;
-    &lt;title&gt;*The* Next Facebook&lt;/title&gt;
-+
-+   &lt;style type="text/css"&gt;
-+   p#message {
-+       color: #FF0000;
-+   }
-+   &lt;/style&gt;
-+
- &lt;/head&gt;
 
++&lt;head&gt;
++   &lt;title&gt;*The* Next Facebook&lt;/title&gt;
++&lt;/head&gt;
++
  &lt;body&gt;
+    &lt;p&gt;Be afraid, Mark, be very afraid.&lt;/p&gt;
+ &lt;/body&gt;
 </code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/05_commit/10">
 <h1>In Unified diff format</h1></div>
@@ -482,8 +490,9 @@ diff -r 133a7e85bfbf index.html
 <h2><br/></h2>
 
 <pre><code>HG: this is ignored!!!
-changed colour of text
+add title
 
+That's about it.
 HG: Enter commit message.  Lines beginning with 'HG:' are removed.
 HG: Leave message empty to abort commit.
 HG: --
@@ -493,12 +502,650 @@ HG: changed index.html
 </code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/05_commit/18">
 <h1>Save and exit</h1></div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/06_summary">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/05_commit/19">
+<h1>Note: to abort,</h1>
+
+<ul>
+<li><p>delete all lines, or</p></li>
+<li><p>prefix all lines with <code>HG:</code></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/05_commit/20">
+<h1>Tips on writing commit messages</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/05_commit/21">
+<h1>Bad!</h1>
+
+<h2><br/></h2>
+
+<pre><code>this is what i did 1) this 2) that 3) this and that; nice i like what i did
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/05_commit/22">
+<h1>Write like email</h1>
+
+<h2><br/></h2>
+
+<pre><code>first line: short summary, like "subject"
+&lt;second line empty&gt;
+third line onwards: more details, if required; like "body".
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/05_commit/23">
+<h1>By default, only summary is shown</h1>
+
+<pre><code>$ hg log --limit 1
+changeset:   1:979b5e026adb
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:06:10 2010 +0800
+</code></pre>
+
+<pre><code>summary:     <span style="background-color: lime">add title</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/05_commit/24">
+<h1>To show full message,</h1>
+
+<pre><code>$ hg log --limit 1 -v
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+files:       index.html
+description:
+</code></pre>
+
+<pre><code><span style="background-color: lime">
+add title
+
+That's about it.</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/05_commit/25">
+<h1>Bad change?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/05_commit/26">
+<pre><code>$ cat &lt;&lt;EOF | patch -p1
+diff --git a/index.html b/index.html
+index 4ece737..b141ee1 100644
+--- a/index.html
++++ b/index.html
+@@ -6,6 +6,7 @@
+
+ &lt;body&gt;
+    &lt;p&gt;Be afraid, Mark, be very afraid.&lt;/p&gt;
++   &lt;p&gt;This is some &lt;very bad&gt; code.&lt;/p&gt;
+ &lt;/body&gt;
+
+ &lt;/html&gt;
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="basics/05_commit/27">
+<h1>Enter <code>hg revert</code></h1>
+
+<h2>Rolls back to previous commit</h2>
+
+<br/>
+
+
+<pre><code># per-file basis
+$ hg revert &lt;file&gt;
+</code></pre>
+
+<br/>
+
+
+<pre><code># all files
+$ hg revert --all
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/1">
+<h1>Our history so far</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/2">
+<pre><code>$ hg log
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+
+changeset:   0:13f2349a10f7
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 21:49:30 2010 +0800
+summary:     first step
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/3">
+<h1>What do all these mean?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/06_logs/4">
+<h1>Changeset</h1>
+
+<pre><code>
+<span style="background-color: lime">changeset</span>:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/06_logs/5">
+<h1>Term: Changeset</h1>
+
+<ul>
+<li><p>also: revision</p></li>
+<li><p>a "point" in history</p></li>
+<li><p>created with <code>hg commit</code></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/6">
+<h1>Revision number</h1>
+
+<pre><code>
+changeset:   <span style="background-color: lime">1</span>:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/06_logs/7">
+<h1>Revision numbers are</h1>
+
+<ul>
+<li><p>short</p></li>
+<li><p>sequential</p></li>
+<li><p>chronological</p></li>
+<li><p>relative to current repository only</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/8">
+<h1>Revision hash</h1>
+
+<pre><code>
+changeset:   1:<span style="background-color: lime">d0be750b3286</span>
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/06_logs/9">
+<h1>Revision hashes are</h1>
+
+<ul>
+<li><p>long</p></li>
+<li><p>SHA-1 hash</p></li>
+<li><p>unique across all repositories</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/06_logs/10">
+<ul>
+<li><p>short (12):</p>
+
+<p><code>d0be750b3286</code></p></li>
+<li><p>long (40):</p>
+
+<p><code>d0be750b3286852f74d2c14f2db315389a1e8b90</code></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/06_logs/11">
+<h1>Committer info</h1>
+
+<pre><code>
+changeset:   1:d0be750b3286
+tag:         tip
+<span style="background-color: lime">user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;</span>
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/06_logs/12">
+<h1>Commit datetime</h1>
+
+<pre><code>
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+<span style="background-color: lime">date:        Sun Sep 12 22:58:32 2010 +0800</span>
+summary:     changed colour of text
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="basics/06_logs/13">
+<h1>Summary</h1>
+
+<pre><code>
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800</code>
+<span style="background-color: lime">summary:     changed colour of text</span>
+</pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/14">
+<h1>More ways of reviewing history</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/15">
+<h1>At a revision (number)</h1>
+
+<h2><br/></h2>
+
+<pre><code>$ hg log -r 1
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/16">
+<h1>At a revision (hash)</h1>
+
+<h2><br/></h2>
+
+<pre><code>$ hg log -r d0be750b3286
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/17">
+<h1>Between a range</h1>
+
+<h2><br/></h2>
+
+<pre><code>$ hg log -r 0:1
+changeset:   0:13f2349a10f7
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 21:49:30 2010 +0800
+summary:     first step
+
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/18">
+<h1>Last &lt;n&gt; revisions</h1>
+
+<h2><br/></h2>
+
+<pre><code>$ hg log --limit 1
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="basics/06_logs/19">
+<h1>What changed?</h1>
+
+<pre><code>$ hg log -r 1 -p
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+
+diff -r 13f2349a10f7 -r d0be750b3286 index.html
+--- a/index.html        Sun Sep 12 21:49:30 2010 +0800
++++ b/index.html        Sun Sep 12 22:58:32 2010 +0800
+@@ -1,6 +1,13 @@
+ &lt;html&gt;
+ &lt;head&gt;
+    &lt;title&gt;*The* Next Facebook&lt;/title&gt;
++
++       &lt;style type="text/css"&gt;
++       p#message {
++               color: #FF0000;
++       }
++       &lt;/style&gt;
++
+ &lt;/head&gt;
+
+ &lt;body&gt;
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="basics/06_logs/20">
+<h1>Also with <code>hg diff</code>:</h1>
+
+<pre><code>$ hg diff -r 0:1
+diff -r 13f2349a10f7 -r d0be750b3286 index.html
+--- a/index.html        Sun Sep 12 21:49:30 2010 +0800
++++ b/index.html        Sun Sep 12 22:58:32 2010 +0800
+@@ -1,6 +1,13 @@
+ &lt;html&gt;
+ &lt;head&gt;
+    &lt;title&gt;*The* Next Facebook&lt;/title&gt;
++
++       &lt;style type="text/css"&gt;
++       p#message {
++               color: #FF0000;
++       }
++       &lt;/style&gt;
++
+ &lt;/head&gt;
+
+ &lt;body&gt;
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/06_logs/21">
+<h1>Different display styles</h1>
+
+<ul>
+<li><p><code>default</code></p></li>
+<li><p><code>compact</code></p></li>
+<li><p><code>changelog</code></p></li>
+<li><p><code>xml</code></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="basics/06_logs/22">
+<h1>With <code>--style compact</code>:</h1>
+
+<h2><br/></h2>
+
+<pre><code>$ hg log --style compact
+changeset:   1:d0be750b3286
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Sun Sep 12 22:58:32 2010 +0800
+summary:     changed colour of text
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller left" ref="basics/06_logs/23">
+<h1>Custom:</h1>
+
+<h2><code>{field}</code>: uses a special field</h2>
+
+<h2><code>field|filter</code>: runs it through a filter</h2>
+
+<h2><br/></h2>
+
+<pre><code>$ hg log --template \
+"{node|short} {desc|firstline} - {author}\n"
+d0be750b3286 changed colour of text - Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+13f2349a10f7 first step - Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/24">
+<h1>Back in time?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/25">
+<pre><code>$ hg update -r 1
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/06_logs/26">
+<h1>&lt; variations &gt;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="basics/07_summary">
 <h1>That's it!</h1>
 
 <ul>
-<li>(almost)</li>
+<li>(for basic workflow)</li>
 </ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/1">
+<h1>Your first branch</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/2">
+<h1>What are branches?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/3">
+<h1>Branches let you...</h1>
+
+<ul>
+<li><p>separate out unstable stuff</p></li>
+<li><p>"cook" complex features</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/4">
+<h1>Presenting</h1>
+
+<ul>
+<li><p>"easy" branching</p></li>
+<li><p>physical</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/01_branch/5">
+<pre><code>$ cd ..
+$ $ ls -1 | grep vcs-demo
+vcs-demo
+$ hg clone vcs-demo new-feature
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/6">
+<h1>Term: Clones</h1>
+
+<ul>
+<li>"copy" of original</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/7">
+<h1>Let's make changes</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="intermediate/01_branch/8">
+<pre><code>$ hg diff
+diff -r d2476a826953 -r 8bf7b8c33422 index.html
+--- a/index.html    Mon Sep 13 16:58:10 2010 +0800
++++ b/index.html    Mon Sep 13 17:02:02 2010 +0800
+@@ -2,6 +2,10 @@
+
+ &lt;head&gt;
+    &lt;title&gt;*The* Next Facebook&lt;/title&gt;
++
++   &lt;style type="text/css"&gt;
++   p { color: red; }
++   &lt;/style&gt;
+ &lt;/head&gt;
+
+ &lt;body&gt;
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/9">
+<h1>&lt;commit&gt;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/10">
+<h1>Meanwhile...</h1>
+
+<ul>
+<li>dev continues in mainline</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="intermediate/01_branch/11">
+<pre><code>$ hg diff
+diff --git a/index.html b/index.html
+index 4ece737..355149a 100644
+--- a/index.html
++++ b/index.html
+@@ -6,6 +6,8 @@
+
+ &lt;body&gt;
+    &lt;p&gt;Be afraid, Mark, be very afraid.&lt;/p&gt;
++
++   &lt;p&gt;Pretty sure he will.&lt;/p&gt;
+ &lt;/body&gt;
+
+ &lt;/html&gt;
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/12">
+<h1>&lt;commit&gt;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/13">
+<h1>&lt;time passes&gt;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/14">
+<h1>Integrate new feature!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/01_branch/15">
+<pre><code>$ cd ../vcs-demo
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="intermediate/01_branch/16">
+<h1>What's in the feature?</h1>
+
+<br/>
+
+
+<pre><code>$ hg incoming ../new-feature/
+comparing with ../new-feature/
+searching for changes
+changeset:   2:8bf7b8c33422
+tag:         tip
+user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+date:        Mon Sep 13 17:02:02 2010 +0800
+summary:     change colour
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/17">
+<h1>Looks good, I want!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/01_branch/18">
+<h1>"Download" changes</h1>
+
+<pre><code>$ hg pull ../new-feature/
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/19">
+<h1>A new head!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small code-centre" ref="intermediate/01_branch/20">
+<pre><code>$ hg glog
+o  changeset:   3:8bf7b8c33422
+|  tag:         tip
+|  parent:      1:d2476a826953
+|  user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+|  date:        Mon Sep 13 17:02:02 2010 +0800
+|  summary:     change colour
+|
+| @  changeset:   2:afe5666b10ee
+|/   user:        Tay Ray Chuan &lt;rctay89@gmail.com&gt;
+|    date:        Mon Sep 13 17:22:04 2010 +0800
+|    summary:     important update
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/21">
+<h1>Term: Head</h1>
+
+<ul>
+<li>changeset with no children</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/22">
+<h1>Recall:</h1>
+
+<ul>
+<li><p><code>hg commit</code> creates a new commit</p></li>
+<li><p>points to previous commit</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intermediate/01_branch/23">
+<p><img src="img/intermediate/wiki-heads.png" alt="heads diagram"/></p>
+
+<p>From: http://mercurial.selenic.com/wiki/Head</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/24">
+<h1>Our histories are still divergent</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/01_branch/25">
+<h1>Combine them!</h1>
+
+<pre><code>$ hg merge -r 3
+$ hg commit -m "merge in new feature"
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intermediate/01_branch/26">
+<h1>Head commit now has two parents</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="intermediate/01_branch/27">
+<pre><code>$ hg glog --style=compact
+@    4[tip]:2,3   4b07e7ac7d3a   2010-09-13 17:37 +0800   rctay89
+|\     merge in new feature
+| |
+| o  3:1   8bf7b8c33422   2010-09-13 17:02 +0800   rctay89
+| |    change colour
+| |
+o |  2   afe5666b10ee   2010-09-13 17:22 +0800   rctay89
+|/     important update
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/1">
+<h1>Life isn't always easy</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/2">
+<h1>Jane's repo/branch</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="intermediate/02_dirty-merge/3">
+<pre><code>$ cat &lt;&lt;EOF | patch -p1
+diff -r d0be750b3286 -r a195a1714d81 index.html
+--- a/index.html    Sun Sep 12 22:58:32 2010 +0800
++++ b/index.html    Mon Sep 13 02:16:32 2010 +0800
+@@ -12,6 +12,8 @@
+
+ &lt;body&gt;
+    &lt;p&gt;Be afraid, Mark, be very afraid.&lt;/p&gt;
++   &lt;p&gt;Sure he'll be.&lt;/p&gt;
++   &lt;p&gt;Pretty sure, that is.&lt;/p&gt;
+ &lt;/body&gt;
+
+ &lt;/html&gt;
+ EOF
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/4">
+<h1>Mary's repo/branch</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="intermediate/02_dirty-merge/5">
+<pre><code>$ cat &lt;&lt;EOF | patch -p1
+diff -r d0be750b3286 index.html
+--- a/index.html    Sun Sep 12 22:58:32 2010 +0800
++++ b/index.html    Mon Sep 13 02:19:22 2010 +0800
+@@ -12,6 +12,8 @@
+
+ &lt;body&gt;
+    &lt;p&gt;Be afraid, Mark, be very afraid.&lt;/p&gt;
++   &lt;p&gt;Hold your horses!&lt;/p&gt;
++   &lt;p&gt;Not so sure myself.&lt;/p&gt;
+ &lt;/body&gt;
+
+ &lt;/html&gt;
+ EOF
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/6">
+<h1>Time to integrate</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/02_dirty-merge/7">
+<h1>Pull from Jane</h1>
+
+<pre><code>$ hg pull ../jane-repo
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/02_dirty-merge/8">
+<h1>Pull from Mary</h1>
+
+<pre><code>$ hg pull ../mary-repo
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/9">
+<h1>Heads?</h1>
+
+<pre><code>$ hg glog --style=compact
+o  6[tip]:1   93446f574041   2010-09-13 18:19 +0800   Mary
+|    Mary says...
+|
+| o  5:1   93a3bd57110f   2010-09-13 18:19 +0800   Jane
+|/     Jane says...
+|
+| @    4:2,3   4b07e7ac7d3a   2010-09-13 17:37 +0800   rctay89
+| |\     merge in new feature
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/10">
+<h1>&lt; resolve merge &gt;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/02_dirty-merge/11">
+<h1>Try resolving again?</h1>
+
+<pre><code>$ hg resolve --all
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/12">
+<h1>Discard merge?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code-centre" ref="intermediate/02_dirty-merge/13">
+<pre><code>$ hg update -C
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/02_dirty-merge/14">
+<h1>&lt; commit &gt;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/03_collab/1">
+<h1>Collaboration is one step away</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intermediate/03_collab/2">
+<h1>Just <code>serve</code></h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="epilogue/01_summary/1">
+<h1>Final words</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="epilogue/01_summary/2">
+<h1>VCS is a tool</h1>
+
+<ul>
+<li><p>(or set of tools)</p></li>
+<li><p>up to you how to use it</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="epilogue/01_summary/3">
+<h1>Logical, atomics commits</h1>
+
+<ul>
+<li><p>for checkpointing to be useful</p></li>
+<li><p>granularity is arbitrary</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="epilogue/01_summary/4">
+<h1>Distributed = speed</h1>
+
+<ul>
+<li><p>but comes at a price</p></li>
+<li><p>only one copy of your "unpushed" work</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="epilogue/01_summary/5">
+<h1>Not a backup solution</h1>
+
+<ul>
+<li>un-committed changes can be lost</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="epilogue/01_summary/6">
 </div>
 </div>
 </div>
