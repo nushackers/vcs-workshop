@@ -18,9 +18,6 @@
 
 	$ cat index.html
 	<html>
-	<head>
-		<title>*The* Next Facebook</title>
-	</head>
 
 	<body>
 		<p>Be afraid, Mark, be very afraid.</p>
