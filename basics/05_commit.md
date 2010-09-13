@@ -51,9 +51,8 @@ C = clean
 	diff -r c8a1664bbe05 -r b2c50c34e446 index.html
 	--- a/index.html	Mon Sep 13 16:23:36 2010 +0800
 	+++ b/index.html	Mon Sep 13 16:25:02 2010 +0800
-	@@ -3,6 +3,10 @@
-	 	<title>*The* Next Facebook</title>
-	 </head>
+	@@ -1,5 +1,9 @@
+	 <html>
 
 	+<head>
 	+	<title>*The* Next Facebook</title>
