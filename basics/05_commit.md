@@ -184,3 +184,37 @@ diff -r 133a7e85bfbf index.html
 add title
 
 That's about it.</span></code></pre>
+
+!SLIDE small
+
+# Bad change?
+
+!SLIDE small code-centre
+
+	$ cat <<EOF | patch -p1
+	diff --git a/index.html b/index.html
+	index 4ece737..b141ee1 100644
+	--- a/index.html
+	+++ b/index.html
+	@@ -6,6 +6,7 @@
+
+	 <body>
+	 	<p>Be afraid, Mark, be very afraid.</p>
+	+	<p>This is some <very bad> code.</p>
+	 </body>
+
+	 </html>
+
+!SLIDE code-centre
+
+# Enter `hg revert`
+
+## Rolls back to previous commit
+
+<br />
+
+	# per-file basis
+	$ hg revert <file>
+<br />
+	# all files
+	$ hg revert --all
