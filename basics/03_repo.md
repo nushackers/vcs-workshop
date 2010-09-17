@@ -67,7 +67,7 @@
 				<span>file3</span>
 			</div>
 
-			<div class="clear"></div>
+			<div class="clear">&nbsp;</div>
 		</div>
 	</div>
 </div>
